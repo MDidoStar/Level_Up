@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 # Page Config
 # ---------------------------
 st.set_page_config(
-    page_title="Contact Us",
+    page_title="Your Data",
     page_icon="📧",
     layout="centered"
 )
@@ -39,11 +39,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ---------------------------
-# Back button
-# ---------------------------
-if st.button("← Back to Web Stream"):
-    st.switch_page("app.py")
+
 
 # ---------------------------
 # Header
