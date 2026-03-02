@@ -69,7 +69,7 @@ def send_email(recipient: str, user_message: str) -> tuple[bool, str]:
         msg["Subject"]  = "📩 We received your enrollment request!"
         msg["Reply-To"] = recipient
 
-        plain = f"Hi!\n\nThanks for reaching out. Here's a copy of your message:\n\n{user_message}\n\n— Web Stream Team"
+        plain = f"Hi!\n\nThanks for reaching out. Here's a copy of your message:\n\n{user_message}\n\n— Level Up Team"
 
         html = f"""
         <html>
@@ -83,7 +83,7 @@ def send_email(recipient: str, user_message: str) -> tuple[bool, str]:
                         padding:16px 20px;margin:20px 0;color:#333;white-space:pre-wrap;">{user_message}</div>
             <p style="color:#555;">We'll get back to you as soon as possible.</p>
             <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
-            <p style="color:#aaa;font-size:12px;text-align:center;">Sent via 🌐 Web Stream</p>
+            <p style="color:#aaa;font-size:12px;text-align:center;">Sent via 🌐 Level Up</p>
           </body>
         </html>
         """
@@ -159,9 +159,10 @@ if st.button("📤 Send Message", use_container_width=True):
             st.balloons()
         else:
             st.error(f"❌ Failed to send: {error_msg}")
-
+MM
 # ---------------------------
 # Footer
 # ---------------------------
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
-st.caption("📧 Powered by Gmail SMTP · Web Stream")
+st.caption("📧 Powered by Gmail SMTP · Level Up")
+
