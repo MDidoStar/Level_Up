@@ -159,7 +159,6 @@ if st.button("📤 Send Message", use_container_width=True):
             st.balloons()
         else:
             st.error(f"❌ Failed to send: {error_msg}")
-MM
 # ---------------------------
 # Footer
 # ---------------------------
